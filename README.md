@@ -7,7 +7,7 @@ Official Python SDK for Binance and Crypto Payment integration.
 pip install binance-and-crypto-payment
 
 
-# Binance & Crypto Checkout for python
+# Binance & Crypto payment gateway for python
 
 [![Latest Stable Version](https://poser.pugx.org/payerurl/binance-and-crypto-checkout/v/stable)](https://packagist.org/packages/payerurl/binance-and-crypto-checkout)
 [![Total Downloads](https://poser.pugx.org/payerurl/binance-and-crypto-checkout/downloads)](https://packagist.org/packages/payerurl/binance-and-crypto-checkout)
@@ -16,20 +16,20 @@ pip install binance-and-crypto-payment
 <img src="https://raw.githubusercontent.com/muhitmonsur/assets/refs/heads/main/banner-772x250.png">
 ## Introduction
 
-The Binance and Crypto Payment Gateway Laravel package is powered by Payerurl. This package acts as a robust cryptocurrency payment processor, allowing merchants and developers to receive customer payments directly into their crypto wallets without the need for a middleman or intermediary account. We specialize in Binance QR code payments, providing a smooth, integrated experience where users never have to leave your Laravel application to complete a transaction.
+The Binance and Crypto Payment Gateway python projects is powered by Payerurl. This package acts as a robust cryptocurrency payment processor, allowing merchants and developers to receive customer payments directly into their crypto wallets without the need for a middleman or intermediary account. We specialize in Binance QR code payments, providing a smooth, integrated experience where users never have to leave your python application to complete a transaction.
 
 
 ### Binance QR Code Payment
 <img src="https://raw.githubusercontent.com/muhitmonsur/assets/refs/heads/main/screenshot-5.png">
-This package is the ideal solution for developers seeking a secure Binance payment integration for Python. Binance Pay is a contactless, borderless, and highly secure payment method. By using this package, you can accept payments via Binance QR codes and process transactions through the Binance personal account API.
+This package is the ideal solution for developers seeking a secure Binance payment integration for Python and django. Binance Pay is a contactless, borderless, and highly secure payment method. By using this projects , you can accept payments via Binance QR codes and process transactions through the Binance personal account API.
 
-The package serves as a seamless bridge between Binance and your Python application. Customers simply scan the generated QR code on your checkout page to finish the transaction. This process is:
+The projects serves as a seamless bridge between Binance and your Python application. Customers simply scan the generated QR code on your checkout page to finish the transaction. This process is:
 
 * **Fast and Simple**: No complex redirects or external logins for the user.
 * **Cost-Effective**: Incurs no network fees or additional hidden costs.
 * **Secure**: Enhanced security protocols help avoid scams and ensure transaction safety.
 
-### <a href="https://payerurl.com/" target="_blank">LIVE DEMO</a>
+### <a href="[https://python.payerurl.com/]" target="_blank">LIVE DEMO</a>
 
 ### How This Package Works
 
@@ -104,7 +104,7 @@ print(response)
 
 ## License
 
-This package is open-sourced software licensed under the [MIT license](LICENSE).
+This projects is open-sourced software licensed under the [MIT license](LICENSE).
 
 ## Support
 
