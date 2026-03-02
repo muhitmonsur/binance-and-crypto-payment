@@ -14,6 +14,7 @@ pip install binance-and-crypto-payment
 [![License](https://poser.pugx.org/payerurl/binance-and-crypto-checkout/license)](https://packagist.org/packages/payerurl/binance-and-crypto-checkout)
 
 <img src="https://raw.githubusercontent.com/muhitmonsur/assets/refs/heads/main/banner-772x250.png">
+
 ## Introduction
 
 The Binance and Crypto Payment Gateway python projects is powered by Payerurl. This package acts as a robust cryptocurrency payment processor, allowing merchants and developers to receive customer payments directly into their crypto wallets without the need for a middleman or intermediary account. We specialize in Binance QR code payments, providing a smooth, integrated experience where users never have to leave your python application to complete a transaction.
@@ -29,7 +30,7 @@ The projects serves as a seamless bridge between Binance and your Python applica
 * **Cost-Effective**: Incurs no network fees or additional hidden costs.
 * **Secure**: Enhanced security protocols help avoid scams and ensure transaction safety.
 
-### <a href="[https://python.payerurl.com/]" target="_blank">LIVE DEMO</a>
+### [LIVE DEMO](https://python.payerurl.com/)
 
 ### How This Package Works
 
@@ -44,7 +45,6 @@ The Binance and Crypto Payment Gateway automatically converts any fiat currency 
 * **Simple Integration**: Streamlined signup process with easy API key integration.
 * **Accessibility**: No KYC required for withdrawals on Basic accounts.
 * **Dedicated Support**: 24/7 technical assistance for integration via Telegram: https://t.me/Payerurl.
-* **Compatibility**: 
 
 ### About Payerurl
 
