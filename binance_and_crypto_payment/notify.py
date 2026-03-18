@@ -4,8 +4,8 @@ import hmac
 import urllib.parse
 
 from .utils import php_http_build_query
-from binance_and_crypto_payment.exceptions import CryptoPaymentException
-from binance_and_crypto_payment.constants import StatusCode
+from .exceptions import CryptoPaymentException
+from .constants import StatusCode
 
 
 class CryptoPaymentNotify:
