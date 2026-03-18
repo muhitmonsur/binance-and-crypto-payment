@@ -26,7 +26,8 @@ class CryptoPaymentNotify:
 
         data = self._extract_data(request)
 
-        status_type = self._validate_status(data["status_code"])
+        # Validate all gateway-level stuff: missing IDs, cancelled, success, incomplete
+        status_type = self._validate_status(data)
 
         # Signature verification
         self._verify_signature(data, signature)
@@ -101,16 +102,34 @@ class CryptoPaymentNotify:
     #         )
 
     #     return "success"
-    def _validate_status(self, status_code):
-        # Cancelled payment
-        if status_code == StatusCode.ORDER_CANCELLED:
+    def _validate_status(self, data):
+        """
+        Validates the status and required fields from the gateway notification.
+        Raises CryptoPaymentException if anything is invalid.
+        """
+
+        # 🚨 Required fields check (gateway-level)
+        if not data.get("transaction_id"):
+            raise CryptoPaymentException(
+                "Transaction ID not found",
+                StatusCode.VALIDATION_ERROR  # 2050
+            )
+
+        if not data.get("order_id"):
+            raise CryptoPaymentException(
+                "Order ID not found",
+                StatusCode.VALIDATION_ERROR  # 2050
+            )
+
+        # 🚫 Cancelled payment
+        if data.get("status_code") == StatusCode.ORDER_CANCELLED:  # 20000
             return "cancelled"
 
-        # Successful payment
-        if status_code == StatusCode.STATUS_CODE_OK:
+        # ✅ Successful payment
+        if data.get("status_code") == StatusCode.STATUS_CODE_OK:  # 200
             return "success"
 
-        # Any other status code → not complete
+        # ❌ Any other status code → not complete / validation error
         raise CryptoPaymentException(
             "Order not complete",
             StatusCode.VALIDATION_ERROR
