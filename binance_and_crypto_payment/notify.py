@@ -90,17 +90,31 @@ class CryptoPaymentNotify:
 
         return data
 
+    # def _validate_status(self, status_code):
+    #     if status_code == 20000:
+    #         return "cancelled"
+
+    #     if status_code != 200:
+    #         raise CryptoPaymentException(
+    #             "Order not complete",
+    #             StatusCode.VALIDATION_ERROR
+    #         )
+
+    #     return "success"
     def _validate_status(self, status_code):
-        if status_code == 20000:
+        # Cancelled payment
+        if status_code == StatusCode.ORDER_CANCELLED:
             return "cancelled"
 
-        if status_code != 200:
-            raise CryptoPaymentException(
-                "Order not complete",
-                StatusCode.VALIDATION_ERROR
-            )
+        # Successful payment
+        if status_code == StatusCode.STATUS_CODE_OK:
+            return "success"
 
-        return "success"
+        # Any other status code → not complete
+        raise CryptoPaymentException(
+            "Order not complete",
+            StatusCode.VALIDATION_ERROR
+        )
 
     def _verify_signature(self, data, signature_received):
         sorted_data = dict(sorted(data.items()))

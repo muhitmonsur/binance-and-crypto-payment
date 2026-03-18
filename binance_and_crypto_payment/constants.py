@@ -11,3 +11,9 @@ class StatusCode:
     INVALID_STATUS = 2054
 
     INTERNAL_ERROR = 5000
+
+    # ✅ New code for cancelled orders
+    ORDER_CANCELLED = 20000
+
+    # ✅ Optional: raw gateway OK status
+    STATUS_CODE_OK = 200
