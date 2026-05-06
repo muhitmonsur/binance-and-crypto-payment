@@ -67,12 +67,6 @@ Get your API key: <a href="https://dash.payerurl.com" target="_blank" rel="noope
 1. collect  your payerurl api public key and secret key . Get your API key: <a href="https://dash.payerurl.com" target="_blank" rel="noopener noreferrer">https://dash.payerurl.com</a>->dashboard->get api credencials
 2. Create a new file (payment.py)  in your project root directory
 3. Paste the below code block
-4. Call the payment() function with required details.
-5. User is redirected to PayerURL payment page.
-6. After payment:
-   * User is redirected to redirect_url.
-   * Your backend receives a callback at notify_url with transaction details.
-   * On cancellation, user is returned to cancel_url.
 
 
 #------------------------------- Create a new file (payment.py)  in your project root directory ---------------#
@@ -128,6 +122,13 @@ print(response)
 
 #------------------------------- Create a new file (payment.py)  in your project root directory ---------------#
 #------------------------------- paste the code above ---------------------------------------------------------#
+
+
+4. run python .\payment.py
+5. you will get response like {'status': True, 'redirect_to': 'https://api-v2.payerurl.com/web-payment-option/PYP19DFD97D5DC'}
+6. the payment link is like "https://api-v2.payerurl.com/web-payment-option/PYP19DFD97D5DC"
+7. use this link to make a payment for your customer. 
+
 
 
 
