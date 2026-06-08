@@ -259,4 +259,15 @@ MIT License — free for personal and commercial use.
 
 ## 🏷️ Keywords
 
-`crypto`  `binance` `coinbase`,'bitcoin','USDT','USDC','credit card to crypto' ,'bitcoin payment','cryptocurrency payment','crypto payment gateway'
+## 🔑 Keywords
+
+![crypto](https://img.shields.io/badge/-crypto-orange)
+![binance](https://img.shields.io/badge/-binance-yellow)
+![coinbase](https://img.shields.io/badge/-coinbase-blue)
+![bitcoin](https://img.shields.io/badge/-bitcoin-orange)
+![USDT](https://img.shields.io/badge/-USDT-green)
+![USDC](https://img.shields.io/badge/-USDC-blue)
+![credit card to crypto](https://img.shields.io/badge/-credit%20card%20to%20crypto-lightgrey)
+![bitcoin payment](https://img.shields.io/badge/-bitcoin%20payment-orange)
+![cryptocurrency payment](https://img.shields.io/badge/-cryptocurrency%20payment-blueviolet)
+![crypto payment gateway](https://img.shields.io/badge/-crypto%20payment%20gateway-red)
