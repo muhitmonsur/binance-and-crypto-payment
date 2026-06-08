@@ -259,4 +259,4 @@ MIT License — free for personal and commercial use.
 
 ## 🏷️ Keywords
 
-`crypto payment` `bitcoin payment python` `binance payment gateway` `usdt payment django` `usdc payment flask` `accept crypto python` `crypto checkout` `binance qr code` `trc20 payment` `erc20 payment` `no kyc payment gateway` `direct wallet payment` `crypto invoice python` `binance pay api` `payerurl python sdk`
+`crypto`  `binance` `coinbase`,'bitcoin','USDT','USDC','credit card to crypto' ,'bitcoin payment','cryptocurrency payment','crypto payment gateway'
