@@ -58,7 +58,7 @@ client = CryptoPaymentClient(
 )
 
 response = client.payment(
-    invoice_id=f"INV-{int(time.time())}",
+    invoice_id=f"PYP-{int(time.time())}",
     amount=10.00,
     currency="USD",
     items=[{"name": "Product", "qty": "1", "price": "10.00"}],
